@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CLLocationManagerDelegate>{
+    NSDictionary* eastRailDict;
+    CLLocationManager *locationManager;
+    NSDictionary* currentStation;
+    NSDictionary* selectedStation;
+    
+    IBOutlet UILabel* nearestStationLabel;
+    IBOutlet UILabel* timeNeededLabel;
+    IBOutlet UILabel* toStationLabel;
+}
 
 @end
