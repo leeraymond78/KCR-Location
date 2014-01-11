@@ -11,7 +11,7 @@
 
 @implementation SettingViewController
 
-@synthesize eastRailDict = _eastRailDict;
+@synthesize eastRailArray = _eastRailArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,7 +58,7 @@
     return nil;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.eastRailDict count];
+    return [self.eastRailArray count];
 }
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -73,21 +73,15 @@
     if(!cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         [[cell textLabel] setTextColor:[UIColor darkGrayColor]];
-        [[cell textLabel] setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:30]];
+        [[cell textLabel] setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:27]];
     }
-    NSString* title;
-    for(NSString* key in [self.eastRailDict allKeys]){
-        NSDictionary* object = [self.eastRailDict objectForKey:key];
-        if(indexPath.row == [[object objectForKey:@"order"] integerValue]){
-            title = key;
-        }
-    }
-    [[cell textLabel] setText:title];
+    [[cell textLabel] setText:_eastRailArray[indexPath.row][@"name"]];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self back:nil];
+    [[NSUserDefaults standardUserDefaults] setValue:@(indexPath.row) forKey:@"selectedStation"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"StationSelected" object:[NSNumber numberWithInteger:indexPath.row]];
 }
 

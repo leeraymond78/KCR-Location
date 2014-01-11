@@ -11,12 +11,12 @@
 
 
 @interface SettingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
-    NSDictionary* _eastRailDict;
+    NSArray* _eastRailArray;
     
     IBOutlet UIButton * backbtn;
     IBOutlet UITableView* _tableView;
 }
 
-@property (nonatomic, retain) NSDictionary* eastRailDict;;
+@property (nonatomic, retain) NSArray* eastRailArray;
 
 @end

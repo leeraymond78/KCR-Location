@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface ViewController : UIViewController<CLLocationManagerDelegate>{
-    NSDictionary* eastRailDict;
+    NSArray* eastRailArray;
     CLLocationManager *locationManager;
     NSDictionary* currentStation;
     NSDictionary* selectedStation;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4D46C717A44EBC0007AED8 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4D46C617A44EBC0007AED8 /* circle.png */; };
 		3D50A78F178F101300710789 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D50A78E178F101300710789 /* UIKit.framework */; };
 		3D50A791178F101300710789 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D50A790178F101300710789 /* Foundation.framework */; };
 		3D50A793178F101300710789 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D50A792178F101300710789 /* CoreGraphics.framework */; };
@@ -18,13 +19,14 @@
 		3D50A7A5178F101300710789 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D50A7A4178F101300710789 /* Default-568h@2x.png */; };
 		3D50A7A8178F101300710789 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50A7A7178F101300710789 /* ViewController.m */; };
 		3D50A7AB178F101300710789 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D50A7A9178F101300710789 /* ViewController.xib */; };
-		3D50A7B2178F118000710789 /* EastRail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D50A7B1178F118000710789 /* EastRail.plist */; };
+		3D50A7B2178F118000710789 /* StationsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D50A7B1178F118000710789 /* StationsData.plist */; };
 		3D50A7B4178F14CB00710789 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D50A7B3178F14CB00710789 /* CoreLocation.framework */; };
 		3D50A7B8178F1F1B00710789 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D50A7B6178F1F1B00710789 /* SettingViewController.m */; };
 		3D50A7B9178F1F1B00710789 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D50A7B7178F1F1B00710789 /* SettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4D46C617A44EBC0007AED8 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		3D50A78B178F101300710789 /* KCR Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KCR Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D50A78E178F101300710789 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3D50A790178F101300710789 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,7 +43,7 @@
 		3D50A7A6178F101300710789 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3D50A7A7178F101300710789 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3D50A7AA178F101300710789 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		3D50A7B1178F118000710789 /* EastRail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EastRail.plist; sourceTree = "<group>"; };
+		3D50A7B1178F118000710789 /* StationsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StationsData.plist; sourceTree = "<group>"; };
 		3D50A7B3178F14CB00710789 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3D50A7B5178F1F1B00710789 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		3D50A7B6178F1F1B00710789 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 				3D50A7A0178F101300710789 /* Default.png */,
 				3D50A7A2178F101300710789 /* Default@2x.png */,
 				3D50A7A4178F101300710789 /* Default-568h@2x.png */,
-				3D50A7B1178F118000710789 /* EastRail.plist */,
+				3D50A7B1178F118000710789 /* StationsData.plist */,
+				3D4D46C617A44EBC0007AED8 /* circle.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -178,8 +181,9 @@
 				3D50A7A3178F101300710789 /* Default@2x.png in Resources */,
 				3D50A7A5178F101300710789 /* Default-568h@2x.png in Resources */,
 				3D50A7AB178F101300710789 /* ViewController.xib in Resources */,
-				3D50A7B2178F118000710789 /* EastRail.plist in Resources */,
+				3D50A7B2178F118000710789 /* StationsData.plist in Resources */,
 				3D50A7B9178F1F1B00710789 /* SettingViewController.xib in Resources */,
+				3D4D46C717A44EBC0007AED8 /* circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +280,11 @@
 		3D50A7AF178F101300710789 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KCR Location/KCR Location-Prefix.pch";
 				INFOPLIST_FILE = "KCR Location/KCR Location-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,9 +293,11 @@
 		3D50A7B0178F101300710789 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KCR Location/KCR Location-Prefix.pch";
 				INFOPLIST_FILE = "KCR Location/KCR Location-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -314,6 +322,7 @@
 				3D50A7B0178F101300710789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
