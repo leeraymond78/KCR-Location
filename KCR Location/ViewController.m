@@ -93,8 +93,8 @@ CLLocation* currentLoc;
         CGFloat percentange = wholeDistance/minDistance;
         
         timeLeftMin = timeLeftMin*percentange;
-        [timeNeededLabel setText:[NSString stringWithFormat:@"%@ Minutes",@(fabsf(timeLeftMin))]];
-        NSLog(@"currently closest station is %@\ndistance is %@\nmins is %@ min",dict[key_name],@(minDistance),@(fabsf(timeLeftMin)));
+        [timeNeededLabel setText:[NSString stringWithFormat:@"%@ Minutes",@(fabs(timeLeftMin))]];
+        NSLog(@"currently closest station is %@\ndistance is %@\nmins is %@ min",dict[key_name],@(minDistance),@(fabs(timeLeftMin)));
     }
     
 }
